@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sydney Musalia | Portfolio</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div id="spline-bg">
+    <iframe 
+      src="https://my.spline.design/particlesflow-wyiDJOSFZ7qZmeI5pwOU23O2/" 
+      frameborder="0"
+      width="100%"
+      height="100%">
+    </iframe>
+  </div>
+
+  <header>
+    <nav class="container">
+      <h2 class="logo">S.<span>Musalia</span></h2>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="menu-toggle" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section home">
+      <div class="intro fade-in">
+        <h1>Hello, I'm <span class="highlight">Sydney Musalia</span></h1>
+        <p class="subtitle">A passionate Web Developer building interactive experiences.</p>
+        <div class="cta-group">
+          <button id="learnMoreBtn" class="btn-primary">Explore My Work</button>
+          <a href="#contact" class="btn-secondary">Let's Talk</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container glass">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="WhatsApp Image 2026-03-10 at 4.12.58 PM.jpeg" alt="Sydney Musalia Profile">
+          </div>
+          <div class="about-text">
+            <div class="about-content">
+              <p>
+                I’m a passionate and detail-oriented web developer driven by curiosity and the desire to build clean, efficient and meaningful digital solutions. I specialize in front-end and back-end development, combining creativity with technical precision to craft user-centered applications that perform seamlessly across devices.
+              </p>
+              <p>
+                My interests span from developing responsive web interfaces to exploring mobile app design and emerging technologies that shape how people interact with software. I believe in writing maintainable code, learning continuously and staying adaptable in a fast-evolving tech landscape.
+              </p>
+              <p>
+                Beyond coding, I value collaboration, problem-solving, and the process of transforming ideas into impactful experiences that make technology more human and accessible.
+              </p>
+            </div>
+          </div>
+        </div>
+
+          <div class="tech-stack">
+          <h3>My Tech Stack</h3>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Frontend</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">React</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Backend</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Django + Python</span>
+                <span class="skill-tag">Node.js + Supabase</span>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </section>
+
+    <section id="projects" class="section">
+      <div class="container glass">
+        <h2 class="section-title">Projects</h2>
+        
+        <div class="project-category-wrapper">
+          <h3 class="category-heading">Web Development</h3>
+          <div class="project-grid">
+            <div class="project-card">
+              <div class="project-info">
+                <h3>Clinic Booking App</h3>
+                <p>A web system for patients to book doctor appointments easily.</p>
+                <span class="tag">Healthcare</span>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-info">
+                <h3>Lost & Found Portal</h3>
+                <p>A community web app to report and find lost items securely.</p>
+                <span class="tag">Community</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-category-wrapper">
+          <h3 class="category-heading">Cyber Security</h3>
+          <div class="project-grid">
+            <div class="project-card">
+              <div class="project-info">
+                <h3>Secure Voting System</h3>
+                <p>A digital platform ensuring accuracy and integrity in the voting process using advanced security protocols.</p>
+                <span class="tag">Encryption</span>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-info">
+                <h3>Network Traffic Analyzer</h3>
+                <p>A tool designed to monitor and analyze network traffic to detect potential security threats and vulnerabilities.</p>
+                <span class="tag">Network Security</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container glass">
+        <h2 class="section-title">Contact Me</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <input type="text" name="name" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Sydney Musalia | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
