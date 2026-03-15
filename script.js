@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (response.ok) {
-          alert('Message sent successfully! It is now in your Gmail inbox.');
+          alert('Sydney has received your request and will get back to you at your email address shortly. Thank you for reaching out!');
           contactForm.reset();
         } else {
           const errorData = await response.json().catch(() => ({}));
